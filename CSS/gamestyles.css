@@ -1,0 +1,261 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #0e0e0e;
+    background-image: url("../Media/dots.png");
+    color: rgb(0, 255, 0);
+    letter-spacing: 2px;
+    box-shadow: inset 0px 20px 20px rgba(0, 0, 0, 0.322);
+}
+
+header{
+    display: flex;
+    padding-top: 70px;
+    width: 100%;
+    height: 200px;
+}
+ul{
+    list-style-type: square;
+}
+li{
+    margin-top: 15px;
+    background-color: rgb(28, 39, 6);
+    border: 1px solid green;
+    border-radius: 20px;
+    padding: 3px;
+    width: 200px;
+    margin-left: 215px;
+}
+
+#yearsH3{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+#positives-list, #disease-ul, #disaster-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.glow{
+    text-shadow: 5px 5px rgb(0, 0, 0);
+}
+.badText{
+    color: rgb(248, 20, 20);
+}
+.badLi li{
+    color: red;
+    background-color: rgb(26, 7, 7);
+    border: 1px solid red;
+    list-style-type: none;
+}
+
+#pname-display{
+    font-size: 3em;
+
+}
+#positiveDiv, #pname-display, #top-right{
+    text-align: center;
+    flex: 1;
+}
+
+/*NEWS*/
+#worldnews{
+    position: relative;
+    margin-top: 50px;
+}
+#worldnews li{
+    width: 300px;
+    background-color: rgba(47, 47, 47, 0.185);
+    padding: 15px;
+    border: none;
+    color: rgba(176, 224, 230, 0.623);
+}
+#newslist{
+    list-style-type: none;
+}
+
+#worldnews h4{
+    text-decoration: underline;
+}
+/*-------------------------------------*/
+
+#earthDisp{
+    display: flex;  
+    justify-content: center;
+}
+#earth{
+    flex: 1;
+    height: 520px;
+}
+
+#lowerInfo{
+    display: flex;
+}
+#population-Disp{
+    background-color: rgb(25, 31, 32);
+    color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+#diseases-Disp, #nextyear,#disasters-Disp{
+    flex: 1;
+    text-align: center;
+}
+
+#nextyear{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nextForm{
+    padding-top: 20px;
+}
+#nextBtn{
+    font-family: 'Press Start 2P', cursive;
+    background-color: darkslategray;
+    color:  rgb(0, 255, 0);
+    font-size: 1.3em;
+    border-radius: 10px;
+    padding: 12px;
+    margin-left: 30px;
+    transition: all .6s ease;
+}
+#nextBtn:hover{
+    cursor: pointer;
+    background-color: dimgray;
+}
+#nextBtn:active{
+    cursor: pointer;
+    background-color: rgb(39, 38, 38);
+}
+
+.buttons{
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgba(47, 79, 79, 0.404);
+    color:  rgb(0, 255, 0);
+    font-size: .8em;
+    border-radius: 9px;
+    margin-top: 2px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    transition: all .6s ease;
+}
+.buttons:hover{
+    cursor: pointer;
+    background-color: dimgray;
+}
+.buttons:active{
+    cursor: pointer;
+    background-color: rgb(39, 38, 38);
+}
+
+#heroBuy{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#moneyAdd{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#docBuy{
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+#planet{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%;
+    -webkit-animation: rotation 120s infinite linear;
+}
+
+#holo{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    margin-top: -610px;
+    -webkit-animation: rotation2 120s infinite linear;
+    z-index: -1;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+@-webkit-keyframes rotation2 {
+    from {
+            -webkit-transform: rotate(359deg);
+    }
+    to {
+            -webkit-transform: rotate(0deg);
+    }
+}
+
+/* TABLE */
+td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#docNum,#humanNum,#heroNum{
+    margin-left: 120px;
+}
+
+/* Event Popup */
+
+#Epopup{
+    display: none;
+    position: absolute;
+    width: 700px;
+    z-index: 3;
+    top: 400px;
+    left: 600px;
+    background-color: rgb(20, 27, 20);
+    border: 2px dotted red;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    padding: 20px;
+}
+#Eclose{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+#Eclose:hover,#Eclose:focus {
+  color: black;
+  background-color: rgb(117, 37, 37);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+#blocker{
+    position: absolute;
+    display: none;
+    z-index: 2;
+    width: 1200px;
+    height: 700px;
+    background-color: rgba(165, 42, 42, 0);
+    bottom: 0;
+    left: 400px;
+}

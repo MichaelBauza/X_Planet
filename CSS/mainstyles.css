@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: #0e0e0e;
+    background-image: url("../Media/dots.png");
+    color: rgb(0, 255, 0);
+    letter-spacing: 2px;
+}
+header{
+    margin-top: 20px;
+}
+#everything{
+    width: 60%;
+    margin-left: 20px;
+    margin-right: auto;
+    text-align: center;
+}
+h1{
+    font-size: 5em;
+    margin-top: 100px;
+    text-shadow: 5px 5px rgb(0, 0, 0);
+}
+h3{
+    font-size: 3em;
+    text-shadow: 5px 5px rgb(0, 0, 0);
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+form{
+    margin-top: 60px;
+}
+label{
+    font-size: 1.6em;
+}
+#spaceImgBtn, #rndNameBtn, #startBtn{
+    font-family: 'Press Start 2P', cursive;
+    background-color: darkslategray;
+    color:  rgb(0, 255, 0);
+    border-radius: 30px;
+    transition: all .5s ease;
+}
+#spaceImgBtn{
+    font-size: 1.1em;
+    padding: 10px;
+    margin-left: 200px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#rndNameBtn{
+    position: relative;
+    font-size: .9em;
+    padding: 10px;
+    top: 230px;
+    left: 260px;
+}
+#startBtn{
+    font-size: 1.6em;
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+#startBtn:hover,#rndNameBtn:hover,#spaceImgBtn:hover{
+    background-color: rgb(75, 124, 124);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+#startBtn:active,#rndNameBtn:active,#spaceImgBtn:hover{
+    background-color: rgb(26, 44, 44);
+    color: rgb(7, 117, 12);
+    transition: all .2s ease;
+}
+#pname{
+    height: 50px;
+    width: 300px;
+    background-color: rgb(19, 39, 27);
+    font-family: 'Press Start 2P', cursive;
+    padding-left: 15px;
+    margin-top: 30px;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+#diffE,#diffM,#diffH{
+    margin-top: 40px;
+    margin-left: -20px;
+}
+#diffE:hover,#diffM:hover,#diffH:hover{
+    cursor: pointer;
+}
+#diffH3{
+    font-size: 1.8em;
+    margin-top: 15px;
+    color: whitesmoke;
+}
+.radioLabels{
+    margin-left: 20px;
+    color: rgba(33, 216, 27, 0.979);;
+}
+/* IMG */
+#corner1{
+    position: absolute;
+    max-width: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* UPDATES */
+#updatelist{
+    width: 700px;
+    font-size: 1.5em;
+    list-style-type: square;
+}
+#updates{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+#updateH1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(82, 80, 80, 0.342);
+    border: 2px solid green;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20PX;
+    margin-top: 10px;
+    width: 900px;
+}
+#updates h3{
+    text-align: center;
+    font-size: 2em;
+    color: rgba(60, 200, 255, 0.699);
+}
+#updates li{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.815);
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Links */
+#linkList{
+    float: right;
+    margin-right: -700px;
+    margin-top: -150px;
+    list-style: none;
+}
+#linkList li{
+    margin-bottom: 30px;
+    margin-left: 20px;
+    float: left;
+}
+.links{
+    margin-bottom: 20px;
+}
+.links:link{
+    text-decoration: none;
+    color: deepskyblue;
+    font-size: 1.3em;
+    background-color: rgba(78, 78, 78, 0.472);
+    border-radius: 10px;
+    padding: 10px;
+    transition: all .5s ease;
+}
+.links:visited{
+    text-decoration: none;
+    color: deepskyblue;
+    font-size: 1.3em;
+    background-color: rgba(78, 78, 78, 0.472);
+    border-radius: 10px;
+    padding: 10px;
+}
+.links:hover{
+    background-color: rgba(104, 104, 104, 0.548);
+    font-size: 1.5em;
+    transition: all .4s ease;
+}
+.links:active{
+    background-color: rgba(59, 59, 59, 0.548);
+    color: whitesmoke;
+}
+
+#backLink:link{
+    text-decoration: none;
+    color: deepskyblue;
+    font-size: 1.3em;
+    background-color: rgba(78, 78, 78, 0.472);
+    border-radius: 10px;
+    padding: 10px;
+    transition: all .5s ease;
+}
+#backLink:visited{
+    text-decoration: none;
+    color: deepskyblue;
+    font-size: 1.3em;
+    background-color: rgba(78, 78, 78, 0.472);
+    border-radius: 10px;
+    padding: 10px;
+    transition: all .5s ease;
+}
+#backLink:hover{
+    color: deepskyblue;
+    font-size: 1.3em;
+    background-color: rgba(148, 148, 148, 0.664);
+    transition: all .5s ease;
+}
+
+/* TIME LAPSE */
+
+#timeAll{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 60px;
+    background-color: rgba(82, 80, 80, 0.342);
+    border: 2px solid green;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#timeH1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgba(82, 80, 80, 0.342);
+    border: 2px solid green;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20PX;
+    margin-top: 10px;
+    width: 900px;
+    font-size: 3em;
+}
+#date{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/*Security*/
+#securityI{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1000px;
+    text-align: left;
+    font-size: .7em;
+    color: rgba(117, 207, 27, 0.39);
+    background-color: rgba(30, 36, 25, 0.472);
+    border-radius: 10px;
+    padding: 10px;
+}
