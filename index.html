@@ -1,0 +1,63 @@
+<!--
+  Created by: Michael Bauza
+  Project: X Planet
+  This is a game in which you simulate a planet
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X Planet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Scripts/mainscript.js" defer="defer"></script>
+    <script src="Scripts/security.js" defer="defer"></script>
+    <link rel="stylesheet" href="CSS/mainstyles.css">
+  </head>
+  <body>
+
+    <img src="Media/earthCorner.png" id="corner1" alt="Earth">
+
+    <div id="everything">
+      <div id="mainHeader">
+        <h1>X Planet Sim</h1>
+        <ul id="linkList">
+          <li><a href="feedback.html" class="links">FeedBack</a></li>
+          <li><a href="updates.html" class="links">Updates</a></li>
+        </ul>
+      </div>
+
+      <form id="setupForm" action="game.html" onsubmit="return readSetup()">
+        <h3>Setup</h3>
+        <label for="pname">Enter Planet Name:</label><br>
+          <input type="text" name="pname" id="pname" value="X Planet">
+        <br>
+        <br>
+        <h3 id="diffH3">Difficulty</h3>
+        <label for="diffE" class="radioLabels">Easy:</label>
+          <input type="radio" name="diff" id="diffE" checked>
+        <label for="diffM" class="radioLabels">Medium:</label>
+          <input type="radio" name="diff" id="diffM">
+        <label for="diffH" class="radioLabels">Hard:</label>
+          <input type="radio" name="diff" id="diffH">
+        <br>
+        <input type="hidden" name="pandiSetting" id="pandiChance">
+        <input type="hidden" name="disSetting" id="disasterChance">
+        <input type="hidden" name="heroSetting" id="heroCost">
+        <input type="hidden" name="docSetting" id="docCost">
+        <input type="hidden" name="popnum" id="popnum">
+        <br>
+        <input type="submit" id="startBtn" value="Start">
+      </form>
+
+      <div id="securityI">
+        <p>Browser Information this site was able to obtain.</p><br>
+        <p><a href="https://www.cloudflare.com/learning/security/what-is-web-application-security/">Learn More About Web security</a></p><br>
+      </div>
+
+    </div>
+    
+  </body>
+</html>

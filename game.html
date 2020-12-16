@@ -1,0 +1,122 @@
+<!--
+  Created by: Michael Bauza
+  Project: X Planet
+  This is a game in which you simulate a planet
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X Planet | Game</title>
+    <script src="Scripts/gamescript.js" defer="defer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/gamestyles.css">
+  </head>
+
+  <body>
+
+    <audio preload="auto" src="Media/Sounds/Beep.mp3" id="nextBtnSound"></audio>
+    <audio preload="auto" src="Media/Sounds/eventSound.mp3" id="eventSound"></audio>
+    <audio preload="auto" src="Media/Sounds/error.mp3" id="badSound"></audio>
+    <audio preload="auto" src="Media/Sounds/earthquake.mp3" id="rumbleSound"></audio>
+    <audio preload="auto" src="Media/Sounds/birth.mp3" id="birthSound"></audio>
+    <audio preload="auto" src="Media/Sounds/meteor.mp3" id="meteorSound"></audio>
+
+    <div id="blocker"></div>
+
+    <div id="Epopup">
+        <div id="event">
+            <input type="button" id="Eclose" value="&times;">
+            <p>IMPORTANT EVENT!</p><br>
+        </div>
+    </div>
+
+    <header>
+    <h3 id="yearsH3">Years:</h3>
+    <div id="positiveDiv">
+        <h3 class="glow">Positives</h3>
+        <ul id="positives-list">
+        </ul>
+    </div>
+
+    <h1 id="pname-display" class="glow">s</h1>
+
+    <div id="top-right">
+        <h3 id="money-display" class="glow">s</h3><br>
+        <h4 id="bRateDisp">Birth Rate:</h4>
+        <h4 id="mRateDisp">Money Rate:</h4>
+        <br>
+        <div id="worldnews">
+            <h4>World News</h4>
+            <ul id="newslist">
+               
+            </ul>
+        </div>
+    </div>
+    </header>
+      
+    <div id="earthDisp">
+        <div id="earth">
+            <img src="Media/planet1.gif" id="planet" alt="Planet">
+            <img src="Media/holo.png" id="holo" alt="Hologram">
+        </div>
+    </div>
+
+    <div id="lowerInfo">
+        <div id="diseases-Disp">  
+            <h3 class="glow badText">Diseases</h3>
+            <ul id="disease-ul" class="badLi">
+                
+            </ul>
+        </div>
+
+        
+        <div id="nextyear">
+            <h2 id="population-Disp" class="glow">s</h2>
+            <form id="nextForm" action="#">
+    
+                <input type="button" id="nextBtn" value="Next Year" onclick="return GameLoop()"><br><br>
+    
+                <table>
+                    <tr>
+                        <td>
+                            <label for="docBuy"><span id="docNum">s</span></label>
+                        </td>
+                        <td>
+                            <input id="docBuy" class="buttons" type="button" value="Buy Doctor" onclick="return AddDoc()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="heroBuy"><span id="heroNum">s</span></label>
+                        </td>
+                        <td>
+                            <input id="heroBuy" class="buttons" type="button" value="Buy Hero" onclick="return AddHero()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="moneyAdd"><span id="humanNum">s</span></label>
+                        </td>
+                        <td>
+                            <input id="moneyAdd" class="buttons" type="button" value="MoneyRate++" onclick="return AddMoney()">
+                        </td>
+                    </tr>
+                </table>
+                
+            </form>
+        </div>
+
+        <div id="disasters-Disp">
+            <h3 class="glow badText">Disasters</h3>
+            <ul id="disaster-ul" class="badLi">
+                
+            </ul>
+        </div>
+    </div>
+
+    
+  </body>
+</html>
